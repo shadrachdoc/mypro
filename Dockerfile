@@ -12,7 +12,7 @@ COPY send_message.py .
 RUN pip install -r requirements.txt
 RUN apt-get update && apt-get -y install cron
 # Set environment variables
-ENV AZURE_STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=pyfun326ccf16;AccountKey=1Ul8S+Lk86/1ld+wgP6s3iGw110jI+xVt0WX0AjUBGe0g8oMmRbmJ4xkqsPw1hl0VkTsaqNihUTA+AStnTHsEw==;EndpointSuffix=core.windows.net
+ENV AZURE_STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=6545643;AccountKey=MhaERvUyva5+WSVt2k4J6jMkal0w5LXdshAbbIqCcynreZVOhpcdzNAhkts9/PbWmD33I13uv+uQ+AStMCA/XA==;EndpointSuffix=core.windows.net
 ENV AZURE_STORAGE_QUEUE_NAME=incoming
 
 # Run the Python script every minute using cron

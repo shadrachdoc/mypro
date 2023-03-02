@@ -4,11 +4,11 @@ import time
 import azure.storage.queue 
 
 # Retrieve the connection string and queue name from environment variables
-connection_string = os.environ['DefaultEndpointsProtocol=https;AccountName=pyfun326ccf16;AccountKey=1Ul8S+Lk86/1ld+wgP6s3iGw110jI+xVt0WX0AjUBGe0g8oMmRbmJ4xkqsPw1hl0VkTsaqNihUTA+AStnTHsEw==;EndpointSuffix=core.windows.net']
-queue_name = os.environ['incoming']
+connection_string = 'DefaultEndpointsProtocol=https;AccountName=6545643;AccountKey=MhaERvUyva5+WSVt2k4J6jMkal0w5LXdshAbbIqCcynreZVOhpcdzNAhkts9/PbWmD33I13uv+uQ+AStMCA/XA==;EndpointSuffix=core.windows.net'
+queue_name = 'incoming'
 
 # Create a connection to the queue service
-queue_service = QueueService(connection_string=connection_string)
+queue_service = QueueService(connection_string)
 
 # Continuously check for the most recent message in the queue
 while True:
